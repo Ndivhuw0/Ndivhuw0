@@ -1,0 +1,65 @@
+.pre-container{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.greeting{
+
+    color: #9466bb;
+    padding: 0 16.5em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2em;
+}
+
+.name{
+    font-weight: 900;
+    font-size: 3.75em;
+    padding: 0 5.2em;
+    margin-top: 0;
+}
+
+.contact {
+
+    border: 2px solid #9466bb ;
+    padding: 10px 20px;
+    color: #9466bb;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 19em;
+
+}
+
+.contact:hover{
+
+    background-color: #9466bb;
+    color: #070a19;
+}
+
+.contact-1{
+
+    border: 2px solid #9466bb ;
+    padding: 10px 20px;
+    color: #9466bb;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact-1:hover{  
+    background-color: #9466bb;
+    color: #070a19;
+}
+.button-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+}

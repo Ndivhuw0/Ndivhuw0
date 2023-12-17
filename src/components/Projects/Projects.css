@@ -1,0 +1,58 @@
+.cards {
+    width: 190px;
+    height: 254px;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.cards:hover {
+
+    width: 250px;
+    height: 314px;
+    cursor: pointer;
+}
+   
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+   
+.circle {
+    padding: 0 4px;
+}
+   
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+   
+.red {
+    background-color: #ff605c;
+}
+   
+.yellow {
+    background-color: #ffbd44;
+}
+   
+.green {
+    background-color: #00ca4e;
+}
+
+.sectionTitle-3{
+    padding-top: 0.5em;
+    font-size: 5em;
+    color: #9466bb ;
+    padding-left: 200px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between; 
+}
