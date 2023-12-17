@@ -1,6 +1,5 @@
 import './App.css';
 import React, {useEffect, useState} from 'react';
-import ReactDOM from 'react-dom';
 import Preloader from './components/Preloader/Preloader';
 import Hero from './components/Hero/Hero';
 import Navbar from './components/NavBar/Navbar';

@@ -80,6 +80,7 @@
     width: 100%; /* Change to 100% for responsiveness */
     max-width: 320px; /* Optional: Limit maximum width if needed */
     margin: 0 auto;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 

@@ -36,7 +36,7 @@ export const Widget = () => {
             }}
           >
             <div className="block">
-                <h2></h2>
+              <br /><br />
               <h2>Tutor</h2>
               <h4>February 2022 - November 2023</h4>
               <p>
@@ -49,7 +49,7 @@ export const Widget = () => {
               </p>
             </div>
             <div className="block">
-                <h2></h2>
+              <br />
               <h2>Intern</h2>
               <h4>January 2023 - February 2023</h4>
               <p>
