@@ -18,11 +18,7 @@ const Navbar = () => {
                         <li><a href='https://github.com/Ndivhuw0' target='_blank'  rel="noopener noreferrer"><LiaGithub className='icon'/></a></li>
                         <li><a href='mailto:maluleken04@gmail.com' target='_blank'  rel="noopener noreferrer"><LiaEnvelope className='icon'/></a></li>
                 </div>
-                <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
-                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
 
-                </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
                         <a href='/' onClick={closeMenu}>Home</a>
@@ -40,6 +36,12 @@ const Navbar = () => {
                         <a href='#contact' onClick={closeMenu}>Contact</a>
                     </li>
                 </ul>
+
+                <div className='hamburger' onClick={handleClick}>
+                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+
+                </div>
             </nav>
         </div>
     )

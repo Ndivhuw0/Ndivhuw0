@@ -11,15 +11,12 @@
 
 .sectionAbout {
     padding-left: 200px;
+    min-height: 80vh;
        
 }
 
 .pic-my{
     padding-left: 2em;
-}
-
-.aboutmelist ul li{
-    list-style: '> ';
 }
 
 .aboutmelist{
@@ -33,5 +30,58 @@
     display: grid;
     grid-template-columns: repeat(2,minmax(140px,200px));
     overflow: hidden;
+    li{
+        list-style: none;
+    }::before{
+        content: "> ";
+        color: #9466bb;
+    }
+    
+}
+
+@media (max-width:480px){
+
+    .sectionTitle {
+        font-size: 3em; 
+    }
+    
+    .sectionAbout {
+        padding-left: 20px;
+    }
+    
+    .row, .pic-my {
+        width: 100%; 
+        float: none; 
+        box-sizing: border-box;
+    }
+    
+    .pic-my {
+        padding-left: 0; 
+        
+    }
+    
+    .aboutmelist {
+        -webkit-columns: 2;
+        column-count: 2;
+        grid-column-gap: 1px;
+        -webkit-column-gap: 1px;
+        column-gap: 1px;
+        -webkit-padding-start: 15px;
+        padding-inline-start: 15px;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(140px,200px));
+        overflow: hidden;
+        
+    }
+    
+    .aboutmelist ul li {
+        list-style: none; 
+        margin-bottom: 10px; 
+    }
+    
+    .my-about-me-picture {
+        width: 80%; 
+        height: auto; 
+    }
     
 }

@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Me from '../../Assets/Me.jpg';
 import './About.css';
+import 'animate.css';
+import { Link } from 'react-scroll';
 
 const About = () => {
+    useEffect(() => {
+        const elements = document.querySelectorAll('.aboutmelist li');
+    
+        const handleScroll = () => {
+          elements.forEach((element, index) => {
+            if (isElementInViewport(element)) {
+              element.classList.add('animate__animated', 'animate__slideInUp');
+            } else {
+              element.classList.remove('animate__animated', 'animate__slideInUp');
+            }
+          });
+        };
+    
+        const isElementInViewport = (el) => {
+          const rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
   return (
     <div className='sectionAbout' id='about'>
         <div className='col'>
@@ -31,13 +61,13 @@ const About = () => {
                     Here are some techonologies that i have worked with:
                 </p>
                 <ul className='aboutmelist'>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>HTML & CSS</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                    <li>MySQL</li>
+                    <li><Link to='java' spy={true} smooth={true} duration={500} className='animate__animated'>Java</Link></li>
+                    <li><Link to='python' spy={true} smooth={true} duration={500} className='animate__animated'>Python</Link></li>
+                    <li><Link to='java' spy={true} smooth={true} duration={500} className='animate__animated'>JavaScript</Link></li>
+                    <li><Link to='python' spy={true} smooth={true} duration={500} className='animate__animated'>HTML & CSS</Link></li>
+                    <li><Link to='java' spy={true} smooth={true} duration={500} className='animate__animated'>React</Link></li>
+                    <li><Link to='python' spy={true} smooth={true} duration={500} className='animate__animated'>Node.js</Link></li>
+                    <li><Link to='java' spy={true} smooth={true} duration={500} className='animate__animated'>MySQL</Link></li>
                 </ul>
             </div>
         </div>

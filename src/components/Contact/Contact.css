@@ -29,8 +29,8 @@
 }
 
 .wrap-text{
-  max-width: 400px; /* Set a maximum width for the text box */
-  text-align: left; /* Align text to the left */
+  max-width: 400px; 
+  text-align: left; 
   padding: 0 200px;
 }
 
@@ -141,3 +141,24 @@ input:focus {
   color: #070a19;
 
 }
+
+
+@media screen and (max-width: 768px) {
+
+  .sectionTitle-5{
+    padding: 0;
+    font-size: 3.5em;
+  }
+  .wrap-text {
+    padding: 0 10px; 
+  }
+
+  .btnHi {
+    margin: 10px 0; 
+  }
+  .contact-form {
+    width: 80%; 
+  }
+}
+
+
