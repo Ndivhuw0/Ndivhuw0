@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Me from '../../Assets/Me.jpg';
+import Me from '../../Assets/Me.jpeg';
 import './About.css';
 import 'animate.css';
 import { Link } from 'react-scroll';
@@ -72,7 +72,7 @@ const About = () => {
             </div>
         </div>
         <div className='pic-my'>
-            <img className='my-about-me-picture' alt='me' src={Me} height={450} width={325}/>
+            <img className='my-about-me-picture' alt='me' src={Me} height={500} width={333}/>
         </div>
     </div>
   )

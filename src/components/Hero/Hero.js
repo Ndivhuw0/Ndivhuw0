@@ -70,8 +70,7 @@ const HeroFirstLine = ({ title }) => {
           }}
           className='row-col'>
           <span className='row-message'>
-            Currently based in Cape Town and Pretoria, and I am
-            interested in Specializing in Cyber-Security.
+            .
           </span>
         </motion.div>
       </div>
